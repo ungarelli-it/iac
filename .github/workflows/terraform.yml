@@ -22,11 +22,11 @@ jobs:
       with:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
       env:
-        TF_VAR_TOKEN: ${{ secrets.TF_VAR_TOKEN }}
-        TF_VAR_CLUSTER_NAME: ${{ secrets.TF_VAR_CLUSTER_NAME }}
-        TF_VAR_NODE_POOL_SIZE: ${{ secrets.TF_VAR_NODE_POOL_SIZE }}
-        TF_VAR_DOMAIN: ${{ secrets.TF_VAR_DOMAIN }}
-        TF_VAR_ADMIN_MAIL: ${{ secrets.TF_VAR_ADMIN_MAIL }}
+        TOKEN: ${{ secrets.TOKEN }}
+        CLUSTER_NAME: ${{ secrets.CLUSTER_NAME }}
+        NODE_POOL_SIZE: ${{ secrets.NODE_POOL_SIZE }}
+        DOMAIN: ${{ secrets.DOMAIN }}
+        ADMIN_MAIL: ${{ secrets.ADMIN_MAIL }}
     - name: Terraform Init
       run: terraform init
     - name: Terraform Format
