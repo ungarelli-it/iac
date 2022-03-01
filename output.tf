@@ -1,5 +1,5 @@
 output "kubeconfig" {
-  value = module.cluster.kubeconfig
+  value     = module.cluster.kubeconfig
   sensitive = true
 }
 
