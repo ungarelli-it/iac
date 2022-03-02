@@ -16,7 +16,7 @@ module "cluster" {
   node_pool_name = "${var.CLUSTER_NAME}-node-pool"
   node_pool_size = var.NODE_POOL_SIZE
   node_count_min = 2
-  node_count_max = 2
+  node_count_max = 3
 }
 
 module "helms" {
